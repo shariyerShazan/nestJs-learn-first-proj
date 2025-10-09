@@ -12,12 +12,15 @@ import { CategoryModule } from './category/category.module';
 import { StudentService } from './student/student.service';
 import { StudentController } from './student/student.controller';
 import { StudentModule } from './student/student.module';
+import { CustomerService } from './customer/customer.service';
+import { CustomerController } from './customer/customer.controller';
+import { CustomerModule } from './customer/customer.module';
 
 
 
 @Module({
-  imports: [EmployeeModule, CategoryModule, StudentModule],
-  controllers: [AppController, UserController, ProductController, EmployeeController, StudentController],
-  providers: [AppService, ProductService , EmployeeService, StudentService],
+  imports: [EmployeeModule, CategoryModule, StudentModule, CustomerModule],
+  controllers: [AppController, UserController, ProductController, EmployeeController, StudentController, CustomerController],
+  providers: [AppService, ProductService , EmployeeService, StudentService, CustomerService],
 })
 export class AppModule {}

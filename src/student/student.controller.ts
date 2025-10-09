@@ -1,5 +1,5 @@
-
 /* eslint-disable prettier/prettier */
+
 import { Body, Controller, Delete, Get, Param, Patch, Post, Put } from '@nestjs/common';
 import { StudentService } from './student.service';
 
