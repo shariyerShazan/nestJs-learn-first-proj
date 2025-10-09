@@ -17,13 +17,14 @@ import { CustomerController } from './customer/customer.controller';
 import { CustomerModule } from './customer/customer.module';
 import { MynameController } from './myname/myname.controller';
 import { UserRolesController } from './user-roles/user-roles.controller';
+import { ExceptionController } from './exception/exception.controller';
 
 
 
 
 @Module({
   imports: [EmployeeModule, CategoryModule, StudentModule, CustomerModule],
-  controllers: [AppController, UserController, ProductController, EmployeeController, StudentController, CustomerController, MynameController, UserRolesController],
+  controllers: [AppController, UserController, ProductController, EmployeeController, StudentController, CustomerController, MynameController, UserRolesController, ExceptionController],
   providers: [AppService, ProductService , EmployeeService, StudentService, CustomerService],
 })
 export class AppModule {}
