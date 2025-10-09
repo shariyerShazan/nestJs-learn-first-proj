@@ -20,12 +20,13 @@ import { UserRolesController } from './user-roles/user-roles.controller';
 import { ExceptionController } from './exception/exception.controller';
 import { DatabaseService } from './database/database.service';
 import { DatabaseController } from './database/database.controller';
+import { DatabaseModule } from './database/database.module';
 
 
 
 
 @Module({
-  imports: [EmployeeModule, CategoryModule, StudentModule, CustomerModule],
+  imports: [EmployeeModule, CategoryModule, StudentModule, CustomerModule, DatabaseModule],
   controllers: [AppController, UserController, ProductController, EmployeeController, StudentController, CustomerController, MynameController, UserRolesController, ExceptionController, DatabaseController],
   providers: [AppService, ProductService , EmployeeService, StudentService, CustomerService, DatabaseService],
 })
