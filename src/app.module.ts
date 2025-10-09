@@ -9,11 +9,15 @@ import { EmployeeModule } from './employee/employee.module';
 import { EmployeeController } from './employee/employee.controller';
 import { EmployeeService } from './employee/employee.service';
 import { CategoryModule } from './category/category.module';
+import { StudentService } from './student/student.service';
+import { StudentController } from './student/student.controller';
+import { StudentModule } from './student/student.module';
+
 
 
 @Module({
-  imports: [EmployeeModule, CategoryModule],
-  controllers: [AppController, UserController, ProductController, EmployeeController],
-  providers: [AppService, ProductService , EmployeeService],
+  imports: [EmployeeModule, CategoryModule, StudentModule],
+  controllers: [AppController, UserController, ProductController, EmployeeController, StudentController],
+  providers: [AppService, ProductService , EmployeeService, StudentService],
 })
 export class AppModule {}
