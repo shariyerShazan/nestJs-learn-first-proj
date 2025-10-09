@@ -16,13 +16,14 @@ import { CustomerService } from './customer/customer.service';
 import { CustomerController } from './customer/customer.controller';
 import { CustomerModule } from './customer/customer.module';
 import { MynameController } from './myname/myname.controller';
+import { UserRolesController } from './user-roles/user-roles.controller';
 
 
 
 
 @Module({
   imports: [EmployeeModule, CategoryModule, StudentModule, CustomerModule],
-  controllers: [AppController, UserController, ProductController, EmployeeController, StudentController, CustomerController, MynameController],
+  controllers: [AppController, UserController, ProductController, EmployeeController, StudentController, CustomerController, MynameController, UserRolesController],
   providers: [AppService, ProductService , EmployeeService, StudentService, CustomerService],
 })
 export class AppModule {}
