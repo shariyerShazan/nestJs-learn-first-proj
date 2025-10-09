@@ -13,7 +13,7 @@ export class EmployeeService {
      };
      getEmployeeById(id: number){
         return this.employees.find((employee)=>{
-            return employee.id === id
+            return employee.id === id;
         })
      }
 }
